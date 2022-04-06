@@ -253,6 +253,8 @@ response:
         "totalPurchasedAmount": 0.0
     }
 ]
+
+
 6) list all orders of given customer
 
 All orders of a given customer can be listed. Here the pagination method was applied. 
