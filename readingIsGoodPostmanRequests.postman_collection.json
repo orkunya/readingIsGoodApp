@@ -1,0 +1,233 @@
+{
+	"info": {
+		"_postman_id": "53d1d99b-3919-4059-965f-119070f52ba5",
+		"name": "readingIsGoodPostmanRequests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/readingisgood/books-retail/v0/customer/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer c9d33685-b827-4e6a-bee2-738c5b17ce85",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\" : \"orkunya3\",\r\n    \"mailAddress\" : \"orku@gmail.com\",\r\n    \"firstName\" : \"Burak\", \r\n\t\"lastName\" : \"Yasar\",\r\n\t\"address\" : \"Bahcelievler\",\r\n\t\"phoneNumber\" : \"5548844410\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/readingisgood/books-retail/v0/customer/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"readingisgood",
+						"books-retail",
+						"v0",
+						"customer",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/readingisgood/book/v0/scan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"publicId\" : \"200\",\r\n    \"name\" : \"Ucurtmayı Vurmasınlar\",\r\n    \"author\" : \"Burak\",\r\n    \"numberOf\" : 4,\r\n    \"price\" : 50.50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/readingisgood/book/v0/scan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"readingisgood",
+						"book",
+						"v0",
+						"scan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/readingisgood/order/v0/order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"createdUserName\" : \"orkunya3\",\r\n    \"orderedBookList\" : [{\r\n        \"bookPublicId\" : 200,\r\n        \"numberOfBooksOrdered\" : 2\r\n    }]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/readingisgood/order/v0/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"readingisgood",
+						"order",
+						"v0",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/readingisgood/order/v0/monthlyStatistic",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"yearNum\" : 2022,\r\n    \"userName\" : \"orkunya3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/readingisgood/order/v0/monthlyStatistic",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"readingisgood",
+						"order",
+						"v0",
+						"monthlyStatistic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/readingisgood/order/v0/customersList",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\" : \"100\",\r\n    \"pageNumber\" : 1,\r\n    \"pageSize\" :  2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/readingisgood/order/v0/customersList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"readingisgood",
+						"order",
+						"v0",
+						"customersList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/readingisgood/order/v0/listById",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"d632c11a-0602-474a-902f-5171a2316384\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/readingisgood/order/v0/listById",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"readingisgood",
+						"order",
+						"v0",
+						"listById"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/readingisgood/order/v0/listByDateInterval",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"startDate\" : \"2021-04-03T19:26:33.782\",\r\n    \"endDate\" : \"2023-04-03T19:26:33.782\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/readingisgood/order/v0/listByDateInterval",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"readingisgood",
+						"order",
+						"v0",
+						"listByDateInterval"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
